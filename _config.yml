@@ -54,7 +54,7 @@ timezone:    nil
 future:      false
 show_drafts: nil
 limit_posts: 0
-pygments:    true
+highlighter:    true
 
 relative_permalinks: true
 
@@ -62,8 +62,8 @@ permalink:     pretty
 paginate_path: 'page:num'
 paginate: 10
 
-markdown:      maruku
-markdown_ext:  markdown,mkd,mkdn,md
+markdown:      redcarpet
+markdown_ext:  markdown,mkdown,mkdn,mkd,md
 textile_ext:   textile
 
 excerpt_separator: "<!-- more -->"
@@ -74,18 +74,11 @@ port:        4000
 baseurl:     /
 lsi:         false
 
-maruku:
-  use_tex:    false
-  use_divs:   false
-  png_engine: blahtex
-  png_dir:    images/latex
-  png_url:    /images/latex
-
 rdiscount:
   extensions: []
 
 redcarpet:
-  extensions: []
+  extensions: ["tables", "autolink", "strikethrough", "space_after_headers", "fenced_code_blocks"]
 
 kramdown:
   auto_ids: true
@@ -109,17 +102,16 @@ redcloth:
 #
 # jekyll-assets: see more at https://github.com/ixti/jekyll-assets
 #
-assets:
-
-  dirname: assets
-  baseurl: /assets/
-  sources:
-    - _assets/javascripts
-    - _assets/stylesheets
-    - _assets/images
-  js_compressor: uglifier
-  css_compressor: sass
-  cachebust: none
-  cache: false
-  gzip: [ text/css, application/javascript ]
-  debug: false
+#assets:
+#  dirname: assets
+#  baseurl: /assets/
+#  sources:
+#    - _assets/javascripts
+#    - _assets/stylesheets
+#    - _assets/images
+#  js_compressor: uglifier
+#  css_compressor: sass
+#  cachebust: none
+#  cache: false
+#  gzip: [ text/css, application/javascript ]
+#  debug: false
