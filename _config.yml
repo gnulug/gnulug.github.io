@@ -1,5 +1,5 @@
 ##The website title
-name: GLUG
+name: GNU/Linux User Group
 ##Markdown processor
 markdown: kramdown
 ##syntax highlighter. change it to pygments
@@ -10,12 +10,17 @@ base_url: /
 sass:
   sass_dir: _sass
   style: :compressed
-paginate: 5
-paginate_path: "page:num"
+#paginate: 5
+#paginate_path: "page:num"
 ##The website description (to be used in meta tags)
-description: GLUG website
+description: Association for COmputing Machinery @ University of Illinois at Urbana-Champaign
+
 ##Some frequently used keywords on your website
 keywords: some, relevant, keywords, for, usage, in metatags
+
+# last modified plugin
+gems:
+  - jekyll-last-modified-at
 
 ##define this for disqus comment support
 #disqus: forumname
