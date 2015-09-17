@@ -1,5 +1,7 @@
 ---
 ---
+$fg-color: #CD8C95;
+$bg-color: #8698C0;
 
 @import 'normalize';
 @import 'gridism';
@@ -10,12 +12,13 @@
 @import 'monokai';
 
 html, body{
-	background-color: #eee;
+	background-color: $bg-color;
 }
 
 .site-subtitle {
 	font-size: 1em;
 	text-align: center;
+	color: white;
 }
 
 body{
@@ -38,6 +41,7 @@ a{
 	margin: 0;
 	font-size: 4em;
 	text-align: center;
+	color: white;
 }
 
 nav ul {
@@ -80,7 +84,7 @@ nav ul {
 
 	a{
 		text-decoration: none;
-		color: #4C4B4B;
+		color: $fg-color;
 		&.opener {
 			display: inline-block;
 			min-width: 40px;
@@ -108,6 +112,7 @@ nav ul {
 	padding: 0;
 	margin: 0;
 	background-color: $nav-back-color;
+	text-align: center;
 
 	ul{
 		display: inline-block;
@@ -129,7 +134,7 @@ nav ul {
 
 		&:hover{
 			background-color: darken($nav-back-color, 10%);
-			border-bottom: 4px solid #1AC9DB;
+			border-bottom: 4px solid $fg-color;
 		}
 	}
 }
@@ -142,7 +147,7 @@ nav ul {
 		font-style: normal;
 	}
 	a{
-		color: #08c;
+		color: $fg-color;
 	}
 	.button{
 		color: #fff;
