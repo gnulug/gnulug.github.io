@@ -10,25 +10,25 @@ sitemap:
 
 One of the most frequent questions we get asked is "What can I expect if I come to a meeting?"
 
-We currently organize meetings into the following 5-15 minute sections but have the most fun when attendees take the floor and drive the agenda. We also like alliteration.
+We currently organize meetings into the following 5-15 minute sections but have the most fun when attendees take the floor and drive the agenda.
 
 + Ask/Discuss/Group
   - Announcements and logistical discussions
 + Linux in the News
   - Review and discuss some Linux-related headlines
-+ Education Epoch
++ Education/Learning tools
   - Share educational resources to improve our understading e.g. new books, MOOCs, tutorials, etc.
-+ Proc Period
++ Filesystems
   - Learn about Procfs by example e.g. tune your kernel, gather data, etc.
-+ SSH Section
++ SSH
   - OpenSSH tips and tricks
-+ Shell Space
++ Shell
   - Improve your mastery of the shell each week
-+ Vim Vicinity
++ Vim/Emacs
   - Show off your vimrc and share productivity increasing shortcuts
-+ Container City
++ Containers
   - Sharing Linux-based container tips
-+ C Corner
++ C coding
   - A C programming mini-series
 + Small Talks
   - Open mic, 20 min or less talks about anything FOSS related
