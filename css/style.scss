@@ -15,6 +15,20 @@ html, body{
 	background-color: $bg-color;
 }
 
+.header-container {
+	text-align: center;
+
+	.logo-container {
+    display: inline-block;
+    vertical-align: middle;
+	}
+
+	.text-container {
+    display: inline-block;
+    vertical-align: middle;
+	}
+}
+
 .site-subtitle {
 	font-size: 1em;
 	text-align: center;
@@ -39,7 +53,7 @@ a{
 }
 .site-title{
 	margin: 0;
-	font-size: 4em;
+	font-size: 3em;
 	text-align: center;
 	color: white;
 }
