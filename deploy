@@ -19,4 +19,4 @@ ssh www.gnulug.org "sudo bash -c '[[ -d /tmp/site ]] || { mkdir /tmp/site && chm
 hi "3. Copying generated html to server"
 scp -r _site/* www.gnulug.org:/tmp/site
 hi "4. Moving html to directory"
-ssh www.gnulug.org sudo mv /tmp/site/* /var/www/html || die "You may not have sudo access"
+ssh www.gnulug.org sudo rsync -a --remove-source-files /tmp/site/* /var/www/html || die "You may not have sudo access"
