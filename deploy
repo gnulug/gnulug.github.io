@@ -1,0 +1,22 @@
+#!/bin/bash
+BIN=$(which jekyll)
+die(){
+  printf "ERROR: $*\n"
+  exit 1
+}
+
+hi(){
+  printf "\n<-- $* -->\n\n"
+  return 0
+}
+
+[[ -f $BIN ]] || die "Jekyll is not installed or not in PATH"
+egrep -q 'www.gnulug.org|\*.gnulug.org|192.17.239.23' ~/.ssh/config || die "You don't seem to have www.gnulug.org configured in ~/.ssh/config\n"
+
+hi "1. Building website" && jekyll build
+hi "2. Creating temporary directory on server"
+ssh www.gnulug.org "sudo bash -c '[[ -d /tmp/site ]] || { mkdir /tmp/site && chmod 777 /tmp/site; }'" 1>/dev/null 2>/dev/null
+hi "3. Copying generated html to server"
+scp -r _site/* www.gnulug.org:/tmp/site
+hi "4. Moving html to directory"
+ssh www.gnulug.org sudo mv /tmp/site/* /var/www/html || die "You may not have sudo access"

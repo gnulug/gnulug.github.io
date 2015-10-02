@@ -2,3 +2,6 @@ _site/
 .DS_Store
 .sass*
 *.lock
+.sass-cache
+_site
+_site/*

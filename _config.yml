@@ -7,7 +7,6 @@ highlighter: pygments
 permalink: none
 
 ##define base_url for valid usage in sitemap.xml and robots.txt
-base_url: 
 sass:
   sass_dir: _sass
   style: :compressed
@@ -29,8 +28,6 @@ gems:
 ##set this to enable google analytics
 #ga_id: analyticsID
 #ga_domain: analyticsDomain
-
-##Some commonly used links
 
 ##put desired image in img/ directory and set the value accordingly. If not defined, a placeholder image will be used.
 ##comment this if you want full width posts with no sidebar
