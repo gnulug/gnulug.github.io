@@ -1,7 +1,8 @@
 ---
 ---
-$fg-color: #CD8C95;
-$bg-color: #8698C0;
+$fg-color: #003D7C;
+$bg-color: #E87722;
+$nav-back-color: #003D7C;
 
 @import 'normalize';
 @import 'gridism';
@@ -155,6 +156,7 @@ nav ul {
 
 .content{
 	margin-top: 1em;
+	background-color: white; 
 
 	h3{
 		margin: 0.3em 0;
@@ -172,7 +174,7 @@ a {
 	&.sharer {
 		padding: 0px 4px;
 		border-radius: 1px;
-		color: #333;
+		color:black;
 
 		i {
 			margin: 0px;
@@ -228,7 +230,7 @@ a {
 				padding: 4px;
 				color: #fff;
 				text-decoration: none;
-				background-color: #333;
+				background-color: black;
 			}
 		}
 	}
@@ -525,4 +527,11 @@ article{
 	a.sharer{
 		display: none;
 	}
+}
+
+.logo-container img {
+    width: 77%;
+}
+.logo-container {
+    width: 16%;
 }
