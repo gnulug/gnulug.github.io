@@ -15,10 +15,8 @@ egrep -q 'www.gnulug.org|\*.gnulug.org|192.17.239.23' ~/.ssh/config 1>/dev/null 
 
 hi "1. Building website" && jekyll build
 hi "2. Creating temporary directory on server"
-ssh www.gnulug.org "sudo bash -c '[[ -d /tmp/site ]] || { mkdir /tmp/site && chmod 777 /tmp/site; }'" 1>/dev/null 2>/dev/null
+ssh www.gnulug.org "sudo bash -c '[[ -d /tmp/site ]] || { mkdir /tmp/site && chmod 777 /tmp/site && chown -R :lug /tmp/site; }'" 1>/dev/null 2>/dev/null
 hi "3. Copying generated html to server"
 scp -r _site/* www.gnulug.org:/tmp/site
-hi "4. Setting lug permissions"
-ssh www.gnulug.org "sudo chown -R :lug /tmp/site" 1>/dev/null 2>/dev/null
 hi "5. Moving html to directory"
 ssh www.gnulug.org sudo rsync -a --remove-source-files /tmp/site/* /var/www/html || die "You may not have sudo access"
