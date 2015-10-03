@@ -11,7 +11,7 @@ hi(){
 }
 
 [[ -f $BIN ]] || die "Jekyll is not installed or not in PATH"
-egrep -q 'www.gnulug.org|\*.gnulug.org|192.17.239.23' ~/.ssh/config || die "You don't seem to have www.gnulug.org configured in ~/.ssh/config\n"
+egrep -q 'www.gnulug.org|\*.gnulug.org|192.17.239.23' ~/.ssh/config 1>/dev/null 2>/dev/null || die "You don't seem to have www.gnulug.org configured in ~/.ssh/config\n"
 
 hi "1. Building website" && jekyll build
 hi "2. Creating temporary directory on server"
