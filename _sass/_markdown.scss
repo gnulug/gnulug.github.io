@@ -1,7 +1,7 @@
 @import url(http://fonts.googleapis.com/css?family=Vollkorn:400,400italic,700,700italic&subset=latin);
 
 body {
-	font: 1.3em "Vollkorn", Palatino, Times;
+	font: 1.3em "Ubuntu", "Roboto", "Open Sans", Sans-Serif;
 	color: #333;
 	line-height: 1.4;
 	text-align: justify;
@@ -80,6 +80,7 @@ a img {
 h1 a, h1 a:hover {
 	color: black;
 	text-decoration: none;
+	font-weight: bold;
 	}
 hr {
 	color : #ddd;
