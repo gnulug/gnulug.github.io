@@ -15,6 +15,6 @@ GLUG aims to provide a place for GNU/Linux users to exchange tips, tricks, solut
 + [Check us out on Youtube](https://www.youtube.com/channel/UCsQCS7sl74hSLJezUE6vyDA)
 + [Sign up for the gnulug-l mailing list](http://www.acm.uiuc.edu/sigs/33)
 + [Follow the Bot on Twitter](https://twitter.com/UIUC_ACM_Bot/)
-+ IRC ##uiuclug on irc.freenode.net
++ [Check out our group chat](http://slack.gnulug.org)
 
 _Last updated on {% last_modified_at %B %d, %Y %}_
