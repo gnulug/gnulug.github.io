@@ -1,8 +1,33 @@
 # GLUG Jekyll website
 [![Build Status](https://travis-ci.org/jonathonklem/new-gnulug.org.svg?branch=master)](https://travis-ci.org/jonathonklem/new-gnulug.org)
 
-To check view, clone this repo and run `jekyll serve` in the directory.
+## Building and publishing
 
-You may need additional plugins, if so `sudo gem install ____` can be used to install them.
+Use a live updating development server
 
-To deploy the website to the web server run the `deploy` script.
+    make devserver
+    
+Publish to github pages
+
+    make publish
+    
+Manually build html
+
+    make html
+    
+Clean output `_site/`
+
+    make clean
+    
+## Dependencies
+
+System dependencies
+
+- `jekyll`
+- `ruby-dev` or `ruby-devel`
+
+Ruby dependencies
+    
+- `jekyll-last-modified-at` 
+- `html-proofer` 
+- `bundler`
