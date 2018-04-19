@@ -7,7 +7,7 @@ changefreq: weekly
 lastmod: 2014-07-07T16:57:30+05:30
 ---
 
-The GNU/Linux Users Group (GLUG) at [ACM@UIUC](https://www-s.acm.illinois.edu/) meets at *8pm on Tuesdays* in 216 Siebel Center.
+The GNU/Linux Users Group (GLUG) at [ACM@UIUC](https://www-s.acm.illinois.edu/) meets at *7 - 9pm on Thursdays* in 1109 Siebel Center.
 
 GLUG aims to provide a place for GNU/Linux users to exchange tips, tricks, solutions, and other knowledge about GNU/Linux. Come join us!  
 
