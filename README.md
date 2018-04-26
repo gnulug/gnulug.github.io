@@ -1,9 +1,8 @@
-# The gnulug.org pelican website.
+# GLUG Pelican website
+<!-- [![Build Status](https://travis-ci.org/jonathonklem/new-gnulug.org.svg?branch=master)](https://travis-ci.org/jonathonklem/new-gnulug.org) -->
 
-## Dependencies
-    pip install pelican pykwiki ghp-import
-    
-## Building and Publishing
+## Building and publishing
+
 Use a live updating development server
 
     make devserver
@@ -12,7 +11,13 @@ Publish to github pages
 
     make publish
     
-Type `make` to see more options
-Use `git` as usual for managing wiki source content.
+Manually build html
 
+    make html
+    
+Clean output `_site/`
 
+    make clean
+    
+## Dependencies
+    pip install pelican hp-import
