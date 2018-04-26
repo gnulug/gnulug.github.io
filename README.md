@@ -1,8 +1,18 @@
-# GLUG Jekyll website
-[![Build Status](https://travis-ci.org/jonathonklem/new-gnulug.org.svg?branch=master)](https://travis-ci.org/jonathonklem/new-gnulug.org)
+# The gnulug.org pelican website.
 
-To check view, clone this repo and run `jekyll serve` in the directory.
+## Dependencies
+    pip install pelican pykwiki ghp-import
+    
+## Building and Publishing
+Use a live updating development server
 
-You may need additional plugins, if so `sudo gem install ____` can be used to install them.
+    make devserver
+    
+Publish to github pages
 
-To deploy the website to the web server run the `deploy` script.
+    make publish
+    
+Type `make` to see more options
+Use `git` as usual for managing wiki source content.
+
+
