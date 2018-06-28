@@ -15,9 +15,9 @@ Manually build html
 
     make html
     
-Clean output `_site/`
+Clean output directory 
 
     make clean
     
 ## Dependencies
-    pip install pelican hp-import
+    pip install pelican ghp-import
