@@ -11,6 +11,8 @@ TIMEZONE = 'America/New_York'
 
 DEFAULT_LANG = 'en'
 
+DEFAULT_DATE = 'fs'
+
 # Feed generation is usually not desired when developing
 FEED_ALL_ATOM = None
 CATEGORY_FEED_ATOM = None
@@ -20,30 +22,14 @@ AUTHOR_FEED_RSS = None
 
 THEME = "./themes/gnulug"
 
-# Blogroll
-# LINKS = (('Mailing List', 'http://getpelican.com/'),
-#          ('Other place', 'http://python.org/'),
-#          ('Jinja2', 'http://jinja.pocoo.org/'),
-#          ('You can modify those links in your config file', '#'),)
-
 MENUITEMS = (('Blog', '/blog/', 'fa fa-coffee'),
              ('Calendar', '/calendar', 'fa fa-calendar'),
              ('Wiki','/wiki/', 'fa fa-coffee'),
              ('Github','http://github.com/gnulug', 'fa fa-coffee'),
              ('About', '/about-us.html', 'fa fa-coffee'),
-             ('Getting Help', '/getting-help.html', 'fa fa-coffee'),
+             ('Contact', '/contact.html', 'fa fa-coffee'),
              )
-# MENUITEMS = (('Blog', '/blog/'),
-#              ('Calendar', '/calendar'),
-#              ('Wiki','/wiki/'),
-#              ('Github','http://github.com/gnulug'),
-#              ('About', '/about-us.html'),
-#              ('Getting Help', '/getting-help.html'),
-#              )
 
-# Social widget
-# SOCIAL = (('You can add links in your config file', '#'),
-#           ('Another social link', '#'),)
 SOCIAL = ()
 FOUNDATION_FOOTER_TEXT = ' '
 
