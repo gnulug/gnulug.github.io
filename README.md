@@ -20,4 +20,4 @@ Clean output directory
     make clean
     
 ## Dependencies
-    pip install pelican ghp-import
+    pip install pelican markdown ghp-import
