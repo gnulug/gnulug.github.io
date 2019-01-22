@@ -1,7 +1,9 @@
 title: About Us
 date: 2017-01-29
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+We are the GNU/Linux users' group at the University of Illinois at
+Urbana-Chapaign. We are a group of people passionate about free software and
+making things.
 
 Join our mailing list [here](https://www-s.acm.illinois.edu/mailman/listinfo/glug).
 
@@ -14,7 +16,7 @@ Check out our Github organization for some of our projects.
 
 |    Year | President        | Vice President | Treasurer      | Webmaster     | Member at Large |
 |---------|------------------|----------------|----------------|---------------|-----------------|
-| 2017-18 |                  |                |                |               |                 |
+| 2017-18 | Maanu Grover     | Evan Widlowski | Jav            |               |                 |
 | 2016-17 |                  |                |                |               |                 |
 | 2015-16 |                  |                |                |               |                 |
 | 2014-15 |                  |                |                |               |                 |
