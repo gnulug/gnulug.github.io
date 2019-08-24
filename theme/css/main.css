@@ -1,9 +1,10 @@
-@import "fontawesome-all.min.css";
+/* @import "fontawesome-all.min.css"; */
 
 body{
     background-color: white;
     margin: 0;
-    font-family: 'Futura-BT';
+    /* font-family: 'Futura-BT'; */
+    font-family: 'Helvetica';
 }
 
 /* ---------- Header ---------- */
