@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>GLUG</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<div id="header-outer">
+		<div id="header" class="banner-center">
+			<img src="logo.svg" class="logo"/>
+			<div id="nonlogo">
+			<strong style="font-size:1.5em;"> GNU/Linux Users' Group </strong>
+			<strong style="color:white; font-size: 0.9em;">Association for Computing Machinery</strong><br>
+			<strong style="color:white; font-size: 0.9em;">University of Illinois at Urbana-Champaign</strong>
+			</div>
+		</div>
+	</div>
+
+	<div id="navbar">
+		<div class="banner-center">
+			<a href="index.html">Home</a>
+			<a href="https://github.com/gnulug">Git</a>
+			<a href="links.html">Join Chat/Mailing List</a>
+		</div>
+	</div>
+
+	<div id="content">
+	<h1>Environment Variables Reference Guide</h1>
+	<h2>How to read environment variables</h2>
+	<p> C:<br>
+	<pre>
+#include &lt;stdio.h&gt;
+#include &lt;stdlib.h&gt;
+
+int main() {
+	char *path = getenv("PATH");
+	printf("%s\n", path);
+	return 0;
+}
+	</pre>
+	</p>
+	<p> Bash:<br>
+	<pre>
+echo $PATH
+	</pre>
+	</p>
+	<p> Python:<br>
+	<pre>
+import os
+print(os.environ['PATH'])
+	</pre>
+	</p>
+	<h2>Find current environment variables</h2>
+	<ul>
+	<li>Global: using the <code>env</code> or <code>printenv</code> commands to list all exported environment variables
+	<li>For a specific process: <code>cat /proc/$$/environ</code>
+	</ul>
+	<h2> A list of environment variables</h2>
+	<p>Starts with commonly used ones and gets more obscure as we go down the list.
+	<ul>
+	<li> <code>PATH</code>: a colon separated list of directories to look for executable binaries.
+	<li> <code>PWD</code>: current working directory
+	<li> <code>HOME</code>: home directory
+	<li> <code>USER</code>: current user name
+	<li> <code>SHELL</code>: default shell
+	<li> <code>TERM</code>: terminal type
+	<li> <code>EDITOR</code>: default editor
+	<li> <code>LANG</code>: default language
+	<li> <code>CDPATH</code>: a colon separarated list of directories for <code>cd</code> to look at when changing directories. If unset, it is usually just <code>.</code> (i.e. current working directory.
+	<li> <code>MANPATH</code>: a colon separated list of directories to look for man pages.
+	<li> <code>OLDPWD</code>: the previous working directory. Used by <code>cd -</code>.
+	<li> <code>SHLVL</code>: the process level of the current shell.
+	<li> <code>PAGER</code>: for example, can change to <code>more</code>.
+	<li> <code>POSIXLY_CORRECT</code>: Enforces POSIX correctness for the output of some utilities, for example, <code>df</code>.
+	<li> <code>COLUMNS</code> and <code>LINES</code>: number of columns and lines of characters available in the current terminal.
+	<li> <code>LD_LIBRARY_PATH</code>: a colon separated list of directories to look for libraries to load.
+	<li> <code>LD_PRELOAD</code>: a library to load before running a program.
+	<li> <code>MACHTYPE</code>: current system architecture (i386, x86_64 etc).
+	</ul>
+	<h2> Bash related tricks:</h2>
+	<p>Credit to <a href="https://www.gnu.org/software/bash/manual/html_node/Variable-Index.html">GNU Bash Manual</a> and <a href="https://stackoverflow.com/a/5163260">StackOverflow</a>
+	<ul>
+	<li><code>$0, $1, ...</code>: arguments passed to the current running script/shell
+	<li> <code>$PS1</code>: describes the prompt.
+	<li><code>$$</code>: current shell's PID.
+	<li><code>$_</code>: last argument passed to the last running command.
+	<li><code>$?</code>: exit code of last running command.
+	<li><code>$!</code>: PID of process most recently sent to background.
+	<li><code>$#</code>: number of arguments passed to shell script.
+	<li><code>$@</code>: enumerates all arguments passed to shell script.
+	<li><code>$IFS</code>: specifies the delimiter for commands such as <code>read</code>.
+	</ul>
+	</div>
+</body>
+</html>
