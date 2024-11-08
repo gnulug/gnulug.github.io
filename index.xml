@@ -1,0 +1,22 @@
+<?xml-stylesheet type="text/xsl" href="template.xsl"?>
+<page>
+    <h2>Welcome to GLUG!</h2>
+    <p>We are the GNU/Linux Users' Group at the University of Illinois Urbana-Champaign. We are a group of people passionate about free software and making things.</p>
+
+    <h2>Weekly meetings</h2>
+    <p>We hold meetings every week.</p>
+
+    <p>Fall 2024 Meeting Time: Wednesdays 6-7 PM</p>
+    <p>Location: Siebel 1302</p>
+    <p>Location: Transportation 206 (Sep. 18 Only)</p>
+
+    <h2>Join</h2>
+    <p>Join the discussion using either client below. Both are synced together!</p>
+    <ul>
+        <li> <a href="https://matrix.to/#/#gnulug:matrix.org">Matrix</a> </li>
+        <li> <a href="https://discord.gg/wEmV4qAZvX">Discord</a> </li>
+    </ul>
+
+    <h2>Previous Meetings</h2>
+    A log of our previous meeting topics can be found <a href="https://github.com/gnulug/meetings">here</a>.
+</page>

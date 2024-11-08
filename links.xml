@@ -1,0 +1,10 @@
+<?xml-stylesheet type="text/xsl" href="template.xsl"?>
+<page>
+	<h1>Links</h1>
+	<p>Join the discussion using either client below. Both are synced together!</p>
+
+	<ul>
+	<li> <h2><a href="https://matrix.to/#/#gnulug:matrix.org">Matrix</a></h2>
+	<li> <h2><a href="https://discord.gg/wEmV4qAZvX">Discord</a></h2>
+	</ul>
+</page>
