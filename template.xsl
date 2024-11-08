@@ -41,6 +41,15 @@
 </html>
 </xsl:template>
 
+<xsl:template match="page2">
+<html>
+    <b><xsl:value-of select="author"/></b>
+    <em>(<xsl:value-of select="date"/>)</em>
+
+    <xsl:value-of select="text()"/>
+</html>
+</xsl:template>
+
 
 <!-- Wildcard Template -->
 <!-- This is required so that tags not defined here (e.g. HTML) are rendered as is -->
