@@ -46,7 +46,13 @@
     <b><xsl:value-of select="author"/></b>
     <em>(<xsl:value-of select="date"/>)</em>
 
-    <xsl:value-of select="text()"/>
+    <!-- normally would just use 'select="text()"', but this only selects up until first tag -->
+    <!-- http://ajaxandxml.blogspot.com/2007/08/why-would-i-use-select.html -->
+    <xsl:for-each select="text()">
+    <xsl:copy>
+        <xsl:apply-templates select="."/>
+    </xsl:copy>
+    </xsl:for-each>
 </html>
 </xsl:template>
 
