@@ -27,9 +27,9 @@
 
         <div id="navbar">
             <div class="banner-center">
-                <a href="index.html">Home</a>
+                <a href="index.xml">Home</a>
                 <a href="https://github.com/gnulug">Git</a>
-                <a href="links.html">Join Chat</a>
+                <a href="links.xml">Join Chat</a>
             </div>
         </div>
 
